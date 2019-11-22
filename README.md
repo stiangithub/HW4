@@ -67,4 +67,14 @@ As introduced before, according to my solution, all districts will receive cut. 
 The distribution is the same. There is no bias.
 
 
+## Problem 4
 
+https://github.com/chao-h/ds5500hw3 I choose Hsiang-wei Chao's solution. His solution is to cut the schools that already have positive budgets, since these school will have little impact on its financial stability. He argued that Schools that already of expenditure more than its revenue should not have federal fund cut if we can transfer the cut to other schools. For fairness, the cut of these school should be weighted against their profit for this year. This should be the best solution for the upcoming federal fund cut.
+
+The advantage of his solution is that it is flexible and good for districts with high expenditure, so that they can avoid the cut and try to reach the same financial level with other districts.
+
+The disadvantage is that by doing this that means he will cut budget for districts with good financial record. It is unfair to these districts because many of these districts may work hard to keep a good balance. And what they received is still budget cut. It is really unfair.
+
+## Problem 5
+
+I want to talk about MapReduce + Hadoop. I felt like in my study life in Northeastern, I was always working on some small datasets due to there is few access to large datasets. And nowadays in industry, nearly every company is dealing with large scale dataset. My experience mainly focuses on training small datasets locally using some Python libraries. But through this lecture, I learned that how to deal with the large scale data by using tools like MR & Hadoop. This is a perfect transition for me to become a Data Scientist working in the industry from a vanilla Machine Learning learner in school.
