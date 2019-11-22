@@ -6,6 +6,20 @@ Given the decision I made in HW3, which is cut 15% budget for all districts, the
 
 ![](https://github.com/stiangithub/HW4/blob/master/pr1.png)
 
+``` Python
+district_fiscal_data = pd.read_csv("/Users/stian/Desktop/DS5500/hw3/Sdf16_1a.txt", sep='\t')
+district_fiscal_data[['V33','TFEDREV']]
+district_fiscal_data = district_fiscal_data[district_fiscal_data.TFEDREV > 0]
+district_fiscal_data_grouped = district_fiscal_data.groupby("STNAME").sum()
+district_fiscal_data_sorted = district_fiscal_data_grouped.sort_values(by='TFEDREV', ascending=False)
+district_fiscal_data_sortedcut = district_fiscal_data.copy()
+cut['cut'] = cut['TFEDREV']*0.15
+cut['proportion'] = 0.15
+cut[['LEAID','cut',"proportion"]]
+d = cut.sort_values(by="cut",ascending=False).head(5)
+d[['NAME','cut']]
+```
+
 According to my calculation, NYC CHANCELLOR'S OFFICE, Los Angeles Unified, City of Chicago SD 299, DADE	and HILLSBOROUGH will be the top 5 districts that are affected most.
 
 ## Problem 2
